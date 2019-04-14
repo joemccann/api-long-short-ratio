@@ -1,6 +1,6 @@
 {
   "name": "api-long-short-ratios",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "☁️ REST-ful API for fetching the Bitfinex Long vs Short ratio for BTC, ETH, LTC and XRP via Google Cloud Functions.",
   "main": "index.js",
   "scripts": {
