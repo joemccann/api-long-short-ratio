@@ -11,13 +11,13 @@ exports['api-long-short-ratio'] = async (req, res) => {
 
   const asset = body.asset || query.asset
 
-  if (!asset) return res.send({ err: ERR_NO_ASSET })
+  if (!asset) return res.status(404).send({ err: ERR_NO_ASSET })
 
   const result = await lsr.ratio({ asset })
 
   const { err, data } = result
 
-  if (err) return res.send({ err })
+  if (err) return res.status(404).send({ err })
 
-  return res.send({ data })
+  return res.status(200).send({ data })
 }
