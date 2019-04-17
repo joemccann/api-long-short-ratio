@@ -15,9 +15,15 @@ function send (obj) {
   return body
 }
 
+function set (value) {
+  this[value] = value
+  return this
+}
+
 const res = {
   status,
-  send
+  send,
+  set
 }
 
 test('sanity', t => {

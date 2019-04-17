@@ -14,6 +14,7 @@
   "author": "Joe McCann",
   "license": "MIT",
   "dependencies": {
+    "cors-for-cloud-functions": "github:joemccann/cors-for-cloud-functions",
     "encoding": "^0.1.12",
     "metric-long-short-ratios": "github:joemccann/metric-long-short-ratios"
   },
